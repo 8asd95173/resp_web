@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$main-color: rgba(51, 41, 42, 1);
+$main-light-color: rgba(100, 75, 79, 1);
+$main-size: 16px;
+
+$black: #000;
+$white: #fff;
+$gray: rgba(242, 242, 242, 1);
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    padding: 20px 0;
+    background: $main-color;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1{
+    margin: 0;
+    font-size: 96px;
+    font-weight: 700;
+    color: $white;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+p{
+    font-size: $main-size;
+    line-height: 19px;
+    margin: 0;
+}
+
+section{
+    padding: 80px 0;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: $gray;
+    border-radius: 4px;
+    padding: 13px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
+}
+
+.container{
+    width: 1030px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.burger{
+    display: none;
+    background: unset;
+    padding: 0;
+    width: 38px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.bg-brown{background: $main-color;}
+.bg-lightbrown{background: $main-light-color;}
+
+.p-0{padding: 0;}
+.d-flex{display: flex;}
+.justify-between{justify-content: space-between;}
+.full-image{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        font-size: 20px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+.main__block{
+    background: url(../img/header-fon.png) no-repeat center center;
+    background-size: cover;
+    height: 770px;
+    .container{
+        height: 100%;
+        position: relative;
+    }
+    h1{
+        position: absolute;
+        bottom: 75px;
+        right: 0;
+        color: $white;
+    }
+}
+
+.wrapper{
+    gap: 45px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    .item{
+        width: 47%;
+    }
+}
+
+.discription__block{
+    text-align: center;
+    p{
+        margin-top: 20px;
+    }
+}
+
+.bg-brown .discription__block{
+    color: $white;
+}
+
+.card__container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card{
+        text-align: center;
+        .text{
+            margin-top: 23px;
+        }
+        .card__title{
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}
+
+.bg-brown .card__container .text{color: $white;}
+
+.about-us .card__container{
+    margin-top: 120px;
+    .card .image{
+        width: 80px;
+        max-width: 100%;
+    }
+}
+
+.gallery{
+    gap: 20px;
+    .card{
+        width: 32%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $gray;
+        height: 225px;
+        .image{
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            img{
+                height: 100%;
+                max-width: unset;
+                object-fit: cover;
+            }
+        }
+        .text{
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+}
+
+.todo{
+    color: $white;
+    button{margin-top: 45px;}
+    .item:first-child{
+        width: 30%;
+        max-width: 100%;
+    }
+    .item:last-child{
+        width: 62%;
+        max-width: 100%;
+    }
+}
+
+.reviews{
+    .discription__block, .card{
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .card .image{
+        width: 120px;
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 100px;
+        margin: 0 auto 30px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card .name{
+        font-weight: 700;
+        margin-top: 45px;
+    }
+
+    .discription__block{margin: auto;}
+
+    .card__container{margin-top: 100px;}
+}
+
+.images__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .image{
+        width: 50%;
+        max-width: 100%;
+        height: 420px;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
+
+footer{
+    padding: 40px 0;
+    background: $main-color;
+    text-align: center;
+
+    .contacts{
+        font-size: 14px;
+        color: rgba(239, 166, 157, 1);
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .copyright{
+        margin-top: 12px;
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+
+@media screen and (max-width: 911px) {
+    .gallery .card{
+        width: 47%;
+    }
+    .gallery{
+        justify-content: center;
+    }
+    .wrapper .item{width: 100%;}
+    .reviews .card__container{justify-content: center;}
+    section{padding: 65px 0;}
+}
+
+@media screen and (max-width: 767px){
+    .navbar__container{display: none;}
+    .burger{display: block;}
+    h1{
+        font-size: 42px;
+        line-height: 49px;
+    }
+    .container{padding: 0 25px;}
+    .main__block h1{right: 25px;}
+    .about-us .card__container .card{
+        width: 35%;
+    }
+    .about-us .card__container .card .image{margin: auto;}
+    .about-us .card__container{gap: 50px;}
+    .reviews .card__container{
+        margin-top: 70px;
+        gap: 50px;
+    }
+    .todo{
+        flex-direction: column;
+        .item{width: 100% !important;}
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-us .card__container{
+        margin-top: 60px;
+        .card{width: 100%;}
+    }
+    .gallery .card{
+        width: 100%;
+    }
+    .gallery .card.with-text{height: 80px;}
+    .wrapper{gap: 30px;}
+    .todo button{margin-top: 60px;}
+    .reviews .card .name{margin-top: 30px;}
+    .images__wrapper .image{width: 100%;}
+}
